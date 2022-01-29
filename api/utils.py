@@ -5,8 +5,8 @@ def solid_example_1(*, example_param_1: str, example_param_2: int):
     :param example_param_2:
     :return:
     """
-    #TODO: THIS IS A TODO. You must do this.
-    pass
+    # TODO: Do something... But the technology to do this something comes online in 2030.
+
 
 def solid_example_2(example_param_1: float) -> int:
     """
@@ -15,6 +15,7 @@ def solid_example_2(example_param_1: float) -> int:
     :return:
     """
     return 2
+
 
 def solid_example_3(*, example_param_1: float = 4.0):
     """
