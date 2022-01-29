@@ -24,8 +24,8 @@ def tracks_accessor():
     # print(r.json())
     # BUT this is de-activated :(
 
-def flights_accessor(*, start_time: int, end_time: int):
-    url = f"{ROOT_URL}/flights/all?begin={start_time}&end={end_time}"
+def flights_accessor(*, start_time_unix_int: int, end_time_unix_int: int):
+    url = f"{ROOT_URL}/flights/all?begin={start_time_unix_int}&end={end_time_unix_int}"
     r = requests.get(url)
     if not r.ok:
         raise RuntimeError(r.json())
